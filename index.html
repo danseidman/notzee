@@ -1,0 +1,28 @@
+<html>
+<head>
+<TITLE>Dan Seidman's Notzee Applet</TITLE>
+<script language="JavaScript">
+function resizeApp() {
+	h = document.body.clientHeight;
+	w = document.body.clientWidth;
+	s = (h > w ? w : h);
+	appObj = document.getElementById("nzApp");
+	appObj.height = s;
+	appObj.width = s;
+}
+</script>
+</head>
+<body onResize="resizeApp()">
+<APPLET ID="nzApp" CODE="Notzee.class">
+</APPLET>
+
+If you have trouble running the app, it can be seen at
+ <a href="http://danseidman.home.comcast.net/~danseidman/nz/">
+http://danseidman.home.comcast.net/~danseidman/nz/
+</a>.
+
+</body>
+<script language="JavaScript">
+	resizeApp();
+</script>
+</html>
